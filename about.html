@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crown & Glory Wigs - Premium human hair wigs for every style, every mood, every woman. Shop 100% human hair lace front and full lace wigs.">
+    <title>Crown & Glory Wigs | Premium Human Hair Wigs</title>
+    
+    <!-- Google Fonts -->
+    <link href="c:\Users\Student\OneDrive\New folder\closure-sew-in-weave.jpg" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="c:\Users\Student\OneDrive\New folder\553123e6e709470e9ad3d21fd0bd71fa.jpg">
+    
+    <style>
+        /* ============================================
+           Crown & Glory Wigs - Main Stylesheet
+           ============================================ */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #2D2D2D;
+            background-color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #2D2D2D;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #9B5DE5;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            border-bottom: 3px solid #F15BB5;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo a {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #9B5DE5;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2D2D2D;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #F15BB5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn-primary {
+            background-color: #9B5DE5;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #7B3DC5;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: #F15BB5;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #D13A95;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: #9B5DE5;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("c:\Users\Student\OneDrive\New folder\Silky Straight Luxe.webp");
+            background-size: cover;
+            background-position: center 30%;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .featured-products {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background-color: #F9F9F9;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin-top: 1rem;
+        }
+
+        .product-card p {
+            color: #9B5DE5;
+            font-weight: 600;
+            margin: 0.5rem 0;
+        }
+
+        .product-card .btn {
+            margin-top: 0.5rem;
+            padding: 8px 20px;
+            font-size: 0.9rem;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            color: #F15BB5 !important;
+        }
+
+        .testimonials {
+            background-color: #F5F0FF;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-card h4 {
+            color: #9B5DE5;
+            margin-bottom: 0;
+        }
+
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('c:\Users\Student\OneDrive\New folder\closure-sew-in-weave.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .about-content {
+            padding: 4rem 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text ul {
+            margin-top: 1rem;
+            list-style: none;
+        }
+
+        .about-text li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .about-text li::before {
+            content: "✓";
+            color: #F15BB5;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 15px;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .products-header {
+            background-color: #9B5DE5;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .products-header h1 {
+            color: white;
+        }
+
+        .products-grid {
+            padding: 4rem 0;
+        }
+
+        .filters {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .filter-btn {
+            background: none;
+            border: 2px solid #9B5DE5;
+            padding: 8px 20px;
+            margin: 0 5px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .filter-btn:hover {
+            background-color: #9B5DE5;
+            color: white;
+        }
+
+        .enquiry-header {
+            background-color: #F15BB5;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .enquiry-header h1 {
+            color: white;
+        }
+
+        .form-section {
+            padding: 4rem 0;
+        }
+
+        .enquiry-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #F9F9F9;
+            padding: 2rem;
+            border-radius: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #DDD;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .whatsapp-alternative {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #DDD;
+        }
+
+        .contact-header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('c:\Users\Student\OneDrive\New folder\body wave classic.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .contact-info-section {
+            padding: 4rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: #F9F9F9;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-card h3 {
+            color: #9B5DE5;
+            margin: 1rem 0;
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            color: #F15BB5;
+        }
+
+        .faq-section {
+            background-color: #F5F0FF;
+            padding: 4rem 0;
+        }
+
+        .faq-item {
+            background-color: white;
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .faq-item h3 {
+            color: #9B5DE5;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .map-container {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+        }
+
+        footer {
+            background-color: #2D2D2D;
+            color: #CCC;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-content h3 {
+            color: white;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-content a {
+            color: #CCC;
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            color: #F15BB5;
+        }
+
+        .social-links a {
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #444;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #9B5DE5;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 99;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: #F15BB5;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero {
+                height: 60vh;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-btn {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        section {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <a href="#">Crown & Glory</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#enquiry">Enquiry</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ==================== HOME SECTION ==================== -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>100% Human Hair Wigs</h1>
+        <p>Luxury, natural-looking wigs for every style, every mood, every woman.</p>
+        <a href="#products" class="btn btn-outline">Shop Collection →</a>
+    </div>
+</section>
+
+<!-- Featured Products Section -->
+<section class="featured-products">
+    <div class="container">
+        <h2>Featured Human Hair Wigs</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="c:\Users\Student\OneDrive\New folder\Silky Straight Luxe.webp" alt="Long straight human hair wig">
+                <h3>Silky Straight Luxe</h3>
+                <p>Lace Front | 100% Human Hair</p>
+                <p class="price">From R1,200</p>
+                <a href="#enquiry" class="btn btn-primary">Enquire Now</a>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\Student\OneDrive\New folder\deepwave.webp" alt="Curly human hair wig">
+                <h3>Deep Wave Goddess</h3>
+                <p>Full Lace | 100% Human Hair</p>
+                <p class="price">From R1,500</p>
+                <a href="#enquiry" class="btn btn-primary">Enquire Now</a>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\Student\OneDrive\New folder\body wave.jpg" alt="Brown human hair wig on mannequin">
+                <h3>Body Wave Elegance</h3>
+                <p>Lace Front | 100% Human Hair</p>
+                <p class="price">From R1,350</p>
+                <a href="#enquiry" class="btn btn-primary">Enquire Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"Crown & Glory changed my life! The human hair quality is amazing and the customer service is top-notch."</p>
+                <h4>- Thandi M.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"I was nervous to buy my first wig, but they guided me through everything. It looks so natural!"</p>
+                <h4>- Sarah K.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Best investment for my hair journey. So comfortable and you can't tell it's a wig!"</p>
+                <h4>- Jessica R.</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ABOUT SECTION ==================== -->
+<section id="about">
+    <div class="about-hero">
+        <div class="hero-content">
+            <h1>Our Story</h1>
+            <p>100% Human Hair Wigs with love and purpose</p>
+        </div>
+    </div>
+
+    <div class="about-content">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Who We Are</h2>
+                    <p>Crown & Glory Wigs was founded in 2021 with a simple mission: to provide high-quality, 100% human hair wigs that make women feel beautiful and confident.</p>
+                    <p>What started as a small Instagram store has grown into a trusted brand for women experiencing hair loss, fashion lovers, and everyone in between.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To provide natural-looking, comfortable human hair wigs that empower customers to feel confident every day.</p>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To become the most trusted human hair wig retailer in South Africa, known for quality and exceptional service.</p>
+                    
+                    <h3>Why Choose Us?</h3>
+                    <ul>
+                        <li>100% Real Human Hair - Not synthetic</li>
+                        <li>Free sizing consultation</li>
+                        <li>Fast shipping nationwide</li>
+                        <li>Compassionate support for medical hair loss</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="c:\Users\Student\OneDrive\New folder\closure-sew-in-weave.jpg" alt="Stylist holding human hair wig with customer">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== PRODUCTS SECTION ==================== -->
+<section id="products">
+    <div class="products-header">
+        <div class="container">
+            <h1>Our Human Hair Collection</h1>
+            <p>Find the perfect 100% human hair wig for your style and budget</p>
+        </div>
+    </div>
+
+    <div class="products-grid">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn">All</button>
+                <button class="filter-btn">Lace Front</button>
+                <button class="filter-btn">Full Lace</button>
+                <button class="filter-btn">Straight</button>
+                <button class="filter-btn">Curly/Wavy</button>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="c:\Users\Student\OneDrive\New folder\Silky Straight Luxe.webp" alt="Long straight human hair wig">
+                    <h3>Silky Straight Luxe</h3>
+                    <p>Lace Front | Human Hair | Natural Black</p>
+                    <p class="price">R1,200 - R1,600</p>
+                    <a href="#enquiry" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Student\OneDrive\New folder\deepwave.webp" alt="Deep wave human hair wig">
+                    <h3>Deep Wave Goddess</h3>
+                    <p>Full Lace | Human Hair | Brown/Black</p>
+                    <p class="price">R1,500 - R2,000</p>
+                    <a href="#enquiry" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Student\OneDrive\New folder\Honey Blonde Curls.webp" alt="Blonde human hair wig">
+                    <h3>Honey Blonde Curls</h3>
+                    <p>Lace Front | Human Hair | Honey Blonde</p>
+                    <p class="price">R1,400 - R1,800</p>
+                    <a href="#enquiry" class="btn btn-primary">Enquire Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="c:\Users\Student\OneDrive\New folder\body wave classic.jpg" alt="Body wave human hair wig">
+                    <h3>Body Wave Classic</h3>
+                    <p>Lace Front | Human Hair | Ombre Brown</p>
+                    <p class="price">R1,300 - R1,700</p>
+                    <a href="#enquiry" class="btn btn-primary">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ENQUIRY SECTION ==================== -->
+<section id="enquiry">
+    <div class="enquiry-header">
+        <div class="container">
+            <h1>Request a Quote</h1>
+            <p>Tell us which human hair wig you're looking for and we'll get back to you within 24 hours</p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <div class="container">
+            <div class="enquiry-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="wig-type">Wig Type *</label>
+                        <select id="wig-type" name="wig-type" required>
+                            <option value="">Select a wig type</option>
+                            <option value="lace-front-straight">Lace Front - Straight</option>
+                            <option value="lace-front-curly">Lace Front - Curly/Wavy</option>
+                            <option value="full-lace-straight">Full Lace - Straight</option>
+                            <option value="full-lace-curly">Full Lace - Curly/Wavy</option>
+                            <option value="custom">Custom Made Wig</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="colour">Colour Preference</label>
+                        <input type="text" id="colour" name="colour" placeholder="e.g., Natural Black, Brown, Blonde, Ombre, Highlighted">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="length">Length Preference</label>
+                        <select id="length" name="length">
+                            <option value="">Select length</option>
+                            <option value="10-12">10-12 inches (Shoulder length)</option>
+                            <option value="14-16">14-16 inches (Mid-back)</option>
+                            <option value="18-20">18-20 inches (Waist length)</option>
+                            <option value="22-plus">22+ inches (Long)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget Range (ZAR)</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget</option>
+                            <option value="under-1000">Under R1,000</option>
+                            <option value="1000-1500">R1,000 - R1,500</option>
+                            <option value="1500-2000">R1,500 - R2,000</option>
+                            <option value="2000-plus">R2,000+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us more about what you're looking for..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+                </form>
+                
+                <div class="whatsapp-alternative">
+                    <p>Prefer to chat? WhatsApp us directly:</p>
+                    <a href="https://wa.me/270609889853" class="btn btn-secondary">Chat on WhatsApp →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<section id="contact">
+    <div class="contact-header">
+        <div class="hero-content">
+            <h1>Get In Touch</h1>
+            <p>We'd love to help you find your perfect human hair wig</p>
+        </div>
+    </div>
+
+    <div class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>📍 Main Location</h3>
+                    <p>Shop 4, Beauty Plaza<br>123 Main Road<br>Cape Town, 8001</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>📍 Mobile Unit</h3>
+                    <p>Available for pop-ups<br>Check Instagram for weekly locations<br>Century City & Stellenbosch</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>📞 Contact Details</h3>
+                    <p>Phone: +27 12 345 6789<br>WhatsApp: 060 988 9853<br>Email: info@crownandglory.co.za</p>
+                </div>
+                <div class="contact-card">
+                    <i class="far fa-clock"></i>
+                    <h3>🕒 Business Hours</h3>
+                    <p>Monday - Friday: 9am - 5pm<br>Saturday: 10am - 2pm<br>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Is your hair really 100% human hair?</h3>
+                <p>Yes! All our wigs are made from 100% real human hair. They can be washed, styled, and dyed just like your natural hair.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I measure my head for a wig?</h3>
+                <p>Measure the circumference of your head from your hairline, behind your ears, and to the nape of your neck. Contact us for a free sizing guide!</p>
+            </div>
+            <div class="faq-item">
+                <h3>How do I care for my human hair wig?</h3>
+                <p>Use sulfate-free shampoo and conditioner, store on a wig stand, and use heat protectant before styling. We provide care instructions with every purchase.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you ship nationwide?</h3>
+                <p>Yes! We ship to all provinces in South Africa. Delivery takes 3-5 business days.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I return or exchange a wig?</h3>
+                <p>Yes, unworn wigs with tags attached can be returned within 7 days for exchange or store credit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Maps -->
+    <div class="container">
+        <div class="map-container">
+            <h2 style="text-align: center; margin-bottom: 1rem;">Our Locations</h2>
+            <iframe src="https://maps.app.goo.gl/4uFpqCrB9UiUdkf58" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <h3>Crown & Glory</h3>
+                <p>100% Human Hair Wigs for confident women.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#about">About</a></p>
+                <p><a href="#products">Products</a></p>
+                <p><a href="#enquiry">Enquiry</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <p>📧 info@crownandglory.co.za</p>
+                <p>📞 +27 12 345 6789</p>
+                <p>💬 WhatsApp: 060 988 9853</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Crown & Glory Wigs. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<script>
+    const backToTopButton = document.getElementById('backToTop');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+    
+    backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
